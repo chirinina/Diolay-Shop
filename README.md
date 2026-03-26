@@ -1,20 +1,39 @@
-# Descripción
+# 🚀 Configuración y ejecución en entorno de desarrollo
 
+## 🧰 Tecnologías utilizadas
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="50" alt="Node.js"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="50" alt="NPM"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="50" alt="Docker"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="50" alt="PostgreSQL"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" height="50" alt="Prisma"/>
+</p>
 
+---
 
-## Correr en dev
+## ⚙️ Pasos para ejecutar el proyecto
 
+```bash
+# 1. Clonar el repositorio
+git clone <URL_DEL_REPOSITORIO>
 
-1. Clonar el repositorio.
-2. Crear una copia del ```.env.template``` y renombrarlo a ```.env``` y cambiar las variables de entorno.
-3. Instalar dependencias ```npm install```
-4. Levantar la base de datos ```docker compose up -d```
-5. Correr las migraciones de Primsa ```npx prisma migrate dev```
-6. Ejecutar seed ```npm run seed```
-7. Correr el proyecto ```npm run dev```
-8. Limpiar el localStorage del navegador.
+# 2. Ir al directorio del proyecto
+cd <NOMBRE_DEL_PROYECTO>
 
+# 3. Crear archivo de entorno
+cp .env.template .env
 
+# 4. Instalar dependencias
+npm install
 
+# 5. Levantar base de datos
+docker compose up -d
 
-## Correr en prod
+# 6. Ejecutar migraciones
+npx prisma migrate dev
+
+# 7. Ejecutar seed
+npm run seed
+
+# 8. Iniciar proyecto
+npm run dev
