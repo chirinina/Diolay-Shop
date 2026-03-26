@@ -1,6 +1,4 @@
-# 🚀 Configuración y ejecución en entorno de desarrollo
 
-## 🧰 Tecnologías utilizadas
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="50" alt="Node.js"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="50" alt="NPM"/>
@@ -11,7 +9,7 @@
 
 ---
 
-## ⚙️ Pasos para ejecutar el proyecto
+## Pasos para ejecutar el proyecto
 
 ```bash
 # 1. Clonar el repositorio
