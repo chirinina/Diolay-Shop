@@ -25,6 +25,8 @@
   <img src="./public/image3.png" height="200" alt="Preview"/>
   
 </p>
+ 
+
 
 ## Pasos para ejecutar el proyecto
 
@@ -52,5 +54,17 @@ npm run seed
 
 # 8. Iniciar proyecto
 npm run dev
+```
 
 
+## Credenciales para ingresar
+
+
+
+- **Admin**: 
+  - Email: `efrain@google.com`
+  - Contraseña: `123456`
+
+- **Usuario**: 
+  - Email: `melissa@google.com`
+  - Contraseña: `123456`
