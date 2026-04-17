@@ -1,12 +1,16 @@
-import { Inter, Montserrat_Alternates } from 'next/font/google';
+import { Inter, Dancing_Script } from 'next/font/google';
 
 
 
 
-export const inter = Inter({ subsets: ['latin'] });
-
-
-export const titleFont = Montserrat_Alternates({ 
+export const inter = Inter({
   subsets: ['latin'],
-  weight: ['500', '700'],
+  variable: '--font-sans',
+});
+
+export const titleFont = Dancing_Script({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-title',
+  display: 'swap',
 });

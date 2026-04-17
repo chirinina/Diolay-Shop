@@ -9,6 +9,22 @@
 </p>
 
 ---
+<p align="center">
+  <img src="./public/image.png" height="200" alt="Preview"/>
+  
+</p>
+<p align="center">
+  <img src="./public/image1.png" height="200" alt="Preview"/>
+  
+</p>
+<p align="center">
+  <img src="./public/image2.png" height="200" alt="Preview"/>
+  
+</p>
+<p align="center">
+  <img src="./public/image3.png" height="200" alt="Preview"/>
+  
+</p>
 
 ## Pasos para ejecutar el proyecto
 
@@ -36,3 +52,5 @@ npm run seed
 
 # 8. Iniciar proyecto
 npm run dev
+
+

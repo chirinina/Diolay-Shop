@@ -3,31 +3,54 @@
 @tailwind utilities;
 
 :root {
-  --primary: #274494;
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --primary: #f97316;
+  --primary-soft: #fde68a;
+  --foreground-rgb: 44, 44, 52;
+  --background-start-rgb: 255, 241, 233;
   --background-end-rgb: 255, 255, 255;
+  --card: #fff7ed;
+  --border-soft: #fcd5ce;
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */ 
 
 body {
+  min-height: 100vh;
+  margin: 0;
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-start-rgb))
-      )
-      rgb(var(--background-end-rgb))
+  background: radial-gradient(circle at top left, rgba(249, 115, 22, 0.14), transparent 24%),
+              radial-gradient(circle at bottom right, rgba(251, 191, 36, 0.12), transparent 30%),
+              linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
+  background-attachment: fixed;
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-style: italic;
+  letter-spacing: 0.01em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+label,
+a,
+p,
+span,
+li,
+input,
+textarea,
+select {
+  font-style: italic;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title), cursive;
+}
 
 @keyframes fadeIn {
   0% {opacity: 0;}
@@ -51,17 +74,17 @@ body {
 
 
 .btn-primary {
-  @apply bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded transition-all;
+  @apply bg-amber-400 hover:bg-amber-500 text-slate-900 py-3 px-5 rounded-full shadow-sm transition-all duration-300;
 }
 
 .btn-secondary {
-  @apply bg-gray-200 hover:bg-gray-300 text-black py-2 px-4 rounded transition-all;
+  @apply bg-rose-100 hover:bg-rose-200 text-slate-900 py-3 px-5 rounded-full shadow-sm transition-all duration-300;
 }
 
 .btn-disabled {
-  @apply bg-gray-600 text-white py-2 px-4 rounded transition-all;
+  @apply bg-slate-400 text-slate-100 py-3 px-5 rounded-full transition-all duration-300;
 }
 
 .btn-danger {
-  @apply bg-red-500 hover:bg-red-700 text-white py-2 px-4 transition-all;
+  @apply bg-pink-500 hover:bg-pink-600 text-white py-3 px-5 rounded-full transition-all duration-300;
 }
